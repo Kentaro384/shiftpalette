@@ -685,6 +685,20 @@ function App() {
                         const partTimeRange = dateRanges[s.id] || dateRanges[String(s.id)];
                         const isPartTime = s.shiftType === 'part_time';
 
+                        // Debug log for 仲本さん (ID 13) on 12/2
+                        if (s.id === 13 && day === 2) {
+                          console.log('[CELL DEBUG] 仲本さん 12/2:', {
+                            dateStr,
+                            shiftId,
+                            isPartTime,
+                            partTimeRange,
+                            dateRanges,
+                            'dateRanges[13]': dateRanges[13],
+                            'dateRanges["13"]': dateRanges["13"],
+                            timeRangeScheduleForDate: timeRangeSchedule[dateStr]
+                          });
+                        }
+
                         return (
                           <td
                             key={day}

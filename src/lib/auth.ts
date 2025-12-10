@@ -11,9 +11,8 @@ export type AuthUser = User | null;
 // Whitelist of allowed email addresses
 // Add emails here to grant access
 const ALLOWED_EMAILS: string[] = [
-    // Add your allowed emails here, e.g.:
-    // 'kentaro@example.com',
-    // 'staff@example.com',
+    'kentaro.miyaji@gmail.com',
+    'chikako.miyaji@gmail.com',
 ];
 
 // Check if email is allowed
